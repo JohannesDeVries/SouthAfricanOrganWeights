@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_organ_weights"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.johannesdevries.southafricanorganweights.OrganWeights"
+    android:background="@drawable/main_header_selector"
+    tools:showIn="@layout/activity_organ_weights">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+            <Button
+                android:text="About"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutButton"
+                android:textColor="@android:color/black"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_alignParentRight="true"
+
+                 />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            >
+
+            <TextView
+                android:text="Sex:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/sexText"
+                android:textSize="22sp"
+                android:typeface="normal"
+                android:textColor="@android:color/black"
+                android:minWidth="140dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/sexGroup">
+
+                <RadioButton
+                    android:text="Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/maleRadio"
+                    android:layout_weight="0.14"
+
+                    app:buttonTint="@android:color/background_dark"
+                     />
+
+                <RadioButton
+                    android:text="Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/femaleRadio"
+                    android:layout_weight="1"
+                    app:buttonTint="@android:color/background_dark"
+                    android:layout_marginLeft="10dp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:text="Race:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/raceText"
+                android:textSize="22sp"
+                android:typeface="normal"
+
+                android:textColor="@android:color/black"
+                android:textColorLink="?android:attr/colorForeground"
+                android:minWidth="140dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/raceGroup">
+
+                <RadioButton
+                    android:text="Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blackRadio"
+                    android:layout_weight="1"
+                    app:buttonTint="@android:color/black" />
+
+                <RadioButton
+                    android:text="Coloured"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/colouredRadio"
+                    android:layout_weight="1.23"
+                    app:buttonTint="@android:color/black"
+                    android:layout_marginLeft="10dp" />
+
+                <RadioButton
+                    android:text="White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/whiteRadio"
+                    android:layout_weight="3.02"
+                    app:buttonTint="@android:color/black"
+                    android:layout_marginLeft="10dp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".10"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="Age: (years)"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/ageText"
+                android:textSize="22sp"
+                android:typeface="normal"
+
+                android:textColor="@android:color/black"
+                android:minWidth="140dp"
+                android:gravity="left|center" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="2"
+                android:id="@+id/ageInput"
+                android:typeface="normal"
+                android:enabled="false"
+                android:focusable="false"
+
+                android:textCursorDrawable="@null"
+
+                android:textColor="?android:attr/colorForeground"
+                android:text="30"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25">
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ageSeek"
+                android:layout_weight="1"
+
+                android:max="82"
+                android:progress="12"
+                style="@android:style/Widget.Holo.Light.SeekBar"
+                android:progressBackgroundTint="@android:color/black"
+
+
+
+
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".10">
+
+            <TextView
+                android:text="Height: (cm)"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/heightText"
+                android:textSize="22sp"
+                android:typeface="normal"
+                android:textColor="@android:color/black"
+                android:minWidth="140dp"
+                android:gravity="left|center" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="2"
+                android:id="@+id/heightInput"
+                android:typeface="normal"
+                android:enabled="false"
+                android:focusable="false"
+
+                android:textCursorDrawable="@null"
+
+                android:textColor="?android:attr/colorForeground"
+                android:text="170"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25">
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/heightSeek"
+                android:layout_weight="1"
+
+                android:max="65"
+                android:progress="35"
+                style="@android:style/Widget.Holo.Light.SeekBar"
+                android:progressBackgroundTint="@android:color/black"
+
+
+
+
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            android:layout_weight=".10">
+
+            <TextView
+                android:text="Weight: (kg)"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/weightText"
+                android:textSize="22sp"
+                android:typeface="normal"
+                android:textColor="@android:color/black"
+                android:minWidth="140dp"
+                android:gravity="left|center" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="2"
+
+                android:textCursorDrawable="@null"
+                android:enabled="false"
+                android:focusable="false"
+
+                android:id="@+id/weightInput"
+                android:typeface="normal"
+                android:textColor="?android:attr/colorForeground"
+                android:text="70"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25">
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/weightSeek"
+                android:layout_weight="1"
+
+                android:max="165"
+                android:progress="35"
+
+                style="@android:style/Widget.Holo.Light.SeekBar"
+                android:progressBackgroundTint="@android:color/black"
+
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25">
+
+            <Button
+                android:text="  Calculate  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calculateButton"
+                android:textColor="@android:color/black"
+                android:onClick="onClick"
+                android:layout_centerInParent="true"
+
+                android:textStyle="normal|bold"
+
+                android:gravity="center" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_results"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/main_header_selector"
+    tools:context="com.example.johannesdevries.southafricanorganweights.Results"
+    tools:showIn="@layout/activity_results">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/blank"
+                android:minWidth="84dip"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Predicted Range"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/predictedRange"
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textSize="16sp"
+                android:textStyle="normal|bold"
+
+                android:layout_weight="1"
+                android:maxWidth="90dip"
+                android:minWidth="100dip"
+                android:gravity="center" />
+
+            <TextView
+                android:text="Ideal Range"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/idealRange"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textSize="16sp"
+                android:textStyle="normal|bold"
+
+                android:layout_weight="1"
+                android:minWidth="85dip"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Brain:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/brainText"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textStyle="normal|bold"
+
+                android:layout_weight="1"
+                android:minWidth="84dip" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/brainPre"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:layout_weight="1"
+                android:minWidth="100dip"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/brainId"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textAlignment="center"
+                android:text="1175 - 1621g"
+                android:layout_weight="1"
+                android:minWidth="85dip"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Heart:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/heartText"
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textStyle="normal|bold"
+
+                android:layout_weight="1"
+                android:minWidth="84dip" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/heartPre"
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+
+                android:layout_weight="1"
+                android:minWidth="100dip"
+                android:gravity="center" />
+
+            <TextView
+                android:text="212 - 373g"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/heartId"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:minWidth="85dip"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Right Lung:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/rlungText"
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textStyle="normal|bold"
+
+                android:layout_weight="1"
+                android:minWidth="84dip" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rlungPre"
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+
+                android:layout_weight="1"
+                android:minWidth="100dip"
+                android:gravity="center" />
+
+            <TextView
+                android:text="217 - 576g"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/rlungId"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:minWidth="85dip"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Left Lung:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/llungText"
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textStyle="normal|bold"
+
+                android:layout_weight="1"
+                android:minWidth="84dip" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/llungPre"
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+
+                android:layout_weight="1"
+                android:minWidth="100dip"
+                android:gravity="center" />
+
+            <TextView
+                android:text="181 - 546g"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/llungId"
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textAlignment="center"
+
+                android:layout_weight="1"
+                android:minWidth="85dip"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Liver:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/liverText"
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textStyle="normal|bold"
+
+
+
+                android:layout_weight="1"
+                android:minWidth="84dip" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/liverPre"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:layout_weight="1"
+                android:minWidth="100dip"
+                android:gravity="center" />
+
+            <TextView
+                android:text="833 - 1758g"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/liverId"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:minWidth="85dip"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Spleen:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/spleenText"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textStyle="normal|bold"
+                android:layout_weight="1"
+                android:minWidth="84dip" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/spleenPre"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:layout_weight="1"
+                android:minWidth="100dip"
+                android:gravity="center" />
+
+            <TextView
+                android:text="18 - 174g"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/spleenId"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:minWidth="85dip"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Right Kidney:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/rkidneyText"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textStyle="normal|bold"
+                android:layout_weight="1"
+                android:minWidth="84dip" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+
+                android:id="@+id/rkidneyPre"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:layout_weight="1"
+                android:minWidth="100dip"
+                android:gravity="center" />
+
+            <TextView
+                android:text="73 - 155g"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/rkidneyId"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:minWidth="85dip"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Left Kidney:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/lkidneyText"
+
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textStyle="normal|bold"
+                android:layout_weight="1"
+                android:minWidth="84dip" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/lkidneyPre"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:layout_weight="1"
+                android:minWidth="100dip"
+                android:gravity="center" />
+
+            <TextView
+                android:text="77 - 159g"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/lkidneyId"
+
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:minWidth="85dip"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
