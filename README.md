@@ -4,7 +4,7 @@ I developed the South African Organ Weights Android app during my studies for a 
 
 The app is a 95% prediction interval calculator for individualized port-mortem organ weights based on data from the South African population.
 
-How does it work? You choose the sex and race from radio buttons. Next you pick the age, height and weight from range sliders. Click on ‘calculate’ to display the predicted and ideal weight of your organs.
+How does it work? You choose the sex and race from radio buttons. Next you pick the age, height and weight from range sliders. Click on ‘calculate’ to display the predicted and ideal weight of the organs.
 
 I received all the data and formulas from the client and developed it in Android Studios using Java. The app was designed according to the clients’ requests. 
 
